@@ -110,7 +110,7 @@ p.shopnow_button{
 .dis_band1_text1{
     padding-left: 60px;
 }
-dis_band1_text2{
+.dis_band1_text2{
     padding-right: :60px;
 }
 .readmore_button{
@@ -200,6 +200,7 @@ dis_band1_text2{
 }
 .manage_pro_col1,.manage_pro_col2,.manage_pro_col3{
     border-top: 2px dotted black;
+    padding: 0px;
 }
 .power_band3{
     background-color: #3cb2d0; 
@@ -374,18 +375,10 @@ p.footer_f2{
 
 }
 .addr{
-/*
-    padding-bottom: 40px;
-    padding-top: 30px;
-    padding-left: 7px;
-    padding-right: 7px;
-*/
-    padding: 30px 7px 40px 7px;
+    padding: 30px 7px 0px 7px;
     text-align: center;
     background-color: #4a4a4a;
-}
-.padding{
-    padding-bottom: 40px;
+    margin-left: 0px;
 }
 .fa-facebook-f:before {
     content: "\f39e";
@@ -416,14 +409,21 @@ p.footer_f2{
     border-radius: 100%;
     padding: 7.5px;
 }
-.padding a{
+.padding_abtus{
+    text-align: center;
+}
+.padding_pref{
+     text-align: center;
+}
+.padding_pref a,.padding_abtus a{
     text-decoration: none;
     color:#727272;
 }
 .container{
     margin-top: 25px;
 }
-@media only screen ans(max-width:1200px){
+/*@media (min-width:993px) and(max-width:1200px){*/
+@media only screen and(max-width:1200px){
     p.shopnow_button {
     color: white;
     font-style: italic;
@@ -434,8 +434,19 @@ p.footer_f2{
     display: inline;
     line-height: 2;
 }
+    .manage_pro_col1, .manage_pro_col2, .manage_pro_col3 {
+    border-top: 2px dotted black;
+}
 }
 @media only screen and (max-width:992px) {
+    .text {
+    position: absolute;
+    top: 3px;
+    left: 50px;
+}
+    .manage_pro_col1, .manage_pro_col2, .manage_pro_col3 {
+    border-top: 2px dotted black;
+}
     .power_row1 {
     padding-top: 30px;
     border-top: 2px dotted black;
@@ -474,6 +485,11 @@ p.footer_f2{
 } 
 }
 @media only screen and (max-width:768px){
+    .text {
+    position: absolute;
+    top: 3px;
+    left: 50px;
+}
     .power_row1 {
     padding-top: 30px;
     padding-left: 90px;
@@ -483,7 +499,8 @@ p.footer_f2{
     font-size: 10px;
     color: white;
     line-height: 0;
-}    p.shopnow_button {
+}    
+     p.shopnow_button {
     color: white;
     font-style: italic;
     font-size: 9px;
@@ -494,7 +511,12 @@ p.footer_f2{
     line-height: 2;
 }
     .dis_band1_text1 {
-    padding-left: 35px;
+    padding: 40px 0px;
+    margin-left: 145px;
+}
+    .dis_band1_text2 {
+    padding: 40px 45px;
+    margin-left: 0px;
 }
     .manage_pro_col1, .manage_pro_col2, .manage_pro_col3 {
 /*    padding-left: 90px;*/
@@ -511,6 +533,7 @@ p.footer_f2{
     text-align: center;
     background-color: #4a4a4a;
     width: 190px;
+        margin-left: 250px;
 }
     .tool {
     background-color: #f2f5f8;
@@ -543,11 +566,6 @@ p.footer_f2{
 }
 }
 @media only screen and (max-width:576px){
-    .text {
-    position: absolute;
-    top: 0%;
-    left: 45px;
-}
     .banner_f2 {
     font-size: 13px;
     color: white;
@@ -556,6 +574,7 @@ p.footer_f2{
 }
     .dis_band1_text1 {
     padding: 40px 45px;
+        margin-left: 60px;
 }
     .power_row2 {
     background-color: #f2f5f8;
@@ -564,14 +583,13 @@ p.footer_f2{
 }
     .dis_band1_text2 {
     padding: 40px 45px;
+        margin-left: 60px;
 }
     .power_band3_f1 {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
     color: white;
-    /* padding-top: 31px; */
-    /* padding-bottom: 50PX; */
     padding: 20px;
 }
     .product_band_text {
@@ -599,13 +617,8 @@ p.footer_f2{
     margin: 25px;
 }
     .manage_pro_col1, .manage_pro_col2, .manage_pro_col3 {
-    padding: 0px 60px;
     border-top: 2px dotted black;
-}
-    .padding {
-    /* padding: 8px 127px; */
-    text-align: center;
-    margin: -10px 220px;
+    padding-left: 60px;
 }
     .addr {
     padding: 30px 7px 40px 7px;
@@ -613,10 +626,17 @@ p.footer_f2{
     background-color: #4a4a4a;
     width: 190px;
     margin-left: 180;
-    margin-top: -25px;
+    margin-top: 0px;
 }
     .strip {
     display: flex;
     justify-content: center;
+}
+    .dis_img{
+        text-align: -webkit-center;
+}
+    .padding_pref {
+    text-align: center;
+    margin-top: 12px;
 }
 }
