@@ -1,0 +1,126 @@
+ul.menu_top{
+    margin-top: 7px;
+}
+ul.menu_top li a{
+    color: black;
+    font-size: 13px;
+}
+ul.menu_top li a:hover{
+    color:rgba(0, 72, 139, 0.712);
+    text-decoration: none;
+}
+ul.menu_top li.sign_up {
+    background-color: darkblue;
+}
+ul.menu_top li.sign_up a{
+    color:white;
+}
+ul.menu_top li.sign_up:hover{
+    background-color: cadetblue;
+}
+.logo{
+    font-size: 30px;
+    color: blueviolet;
+    background-color: aquamarine;
+    text-align: center;
+}
+.menu_bottom .menu_bottom_list  a{
+    color: black;
+}
+.menu_bottom .menu_bottom_list .btn:hover{
+    text-decoration: none;
+    color: rgba(0, 72, 139, 0.712);
+    background-color: white;
+}
+.menu_bottom .menu_bottom_list a:hover{
+    text-decoration: none;
+}
+.menu_bottom_list{
+    text-align: center;
+    background-color: rgba(135, 206, 250, 0.212);
+}
+
+.menu_bottom_list .btn{
+    margin: 20px 20px 20px 20px;
+}
+.fa-caret-down{
+    text-align: center;
+    background-color: rgba(135, 206, 250, 0);
+    font-size: 17px;
+    padding: 0px 7px;
+}
+
+.side_bar{
+    background-color: rgba(135, 206, 250, 0.418);
+}
+.title_text{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 2.5;
+}
+.plain_text{
+    font-size: 15px;
+    line-height: 2;
+}
+.side_bar{
+    padding:50px 40px;
+    border-right: 2px solid darkgray;
+}
+.plain_text a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu_bottom_list .dropdown{
+    display: inline-block;
+}
+
+.menu_bottom_list .dropdown .dropdown-menu a{
+    display: block;
+}
+
+.menu_bottom_list .dropdown .dropdown-menu{
+    top: 75%;
+    left: 21px;
+}
+.menu_bottom_list .dropdown .dropdown-menu a {
+    display: block;
+    line-height: 2;
+    padding-left: 10px;
+}
+.menu_bottom_list .dropdown .dropdown-menu a:hover {
+    display: block;
+    line-height: 2;
+    background-color:rgba(128, 128, 128, 0.144);
+}
+.menu_bottom_list .dropdown .dropdown-menu {
+    top: 74%;
+    left: 21px;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+}
+.home_button{
+    display: inline;
+}
+.fa-home:hover{
+    display: inline;
+    color: rgb(14, 92, 156);
+}
+.fa-home{
+    font-size: 30px;
+    vertical-align: middle;
+}
+@media only screen and (max-width:1200px){
+
+}
+@media only screen and (max-width:992px){
+
+}
+@media only screen and (max-width:768px){
+
+}
+@media only screen and (max-width:576px){
+
+}
+
