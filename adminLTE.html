@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="adminLTE_css.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--header-->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-3 padleft">
+                        <div class="admin_head">
+                            <b>Admin</b>LTE
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-9 ">
+                        <div class="admin_content">
+                                <div class="menu_bar_right" id="menu_button">                                      
+                                    <a><i class="fas fa-bars"></i></a>                                          
+                                </div>
+                                <div class="menu_bar_left">
+                                    <ul>                                    
+                                   <li> <a class="icon">
+                                            <i class="far fa-envelope"></i>
+                                            <sup><span class="badge badge-success">4</span></sup>
+                                    </a></li>                                    
+                                    <li><a class="icon">
+                                            <i class="far fa-bell"></i>
+                                            <sup><span class="badge badge-danger">10</span></sup>
+                                    </a></li>
+                                    <li><a class="icon">
+                                            <i class="far fa-flag"></i>
+                                            <sup><span class="badge badge-warning">9</span></sup>
+                                    </a></li>
+                                    <li><a class="icon">
+                                        <span class="auth_img">
+                                            <img src="auth1.jpg">
+                                        </span>
+                                        <span class="auth_name">
+                                            Alexender the Great !
+                                        </span>
+                                    </a></li>
+                                   <li> <a class="icon">
+                                            <i class="fas fa-cogs"></i>
+                                    </a> </li>
+                                    </ul>                                
+                                </div>
+                        </div>                       
+                    </div>                       
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-3 padleft">
+                            <!--sidebar-->
+                            <div class="sidebar" id="sidebar">
+                                <div class="profile">
+                                    <div class="profile_img">
+                                        <img src="auth1.jpg">
+                                    </div>
+                                    <div class="profile_text">
+                                        <p class="profile_text_f1">Alexender Pierce</p>
+                                        <p class="profile_text_f2"><i class="fas fa-circle"></i>Online</p>
+                                    </div>
+                                </div>
+                                <div class="search_row">
+                                        <input class="form-control" type="text" placeholder="Search...">
+                                        <span><a><i class="fas fa-search"></i></a></span>
+                                </div>
+                                <!--list starts-->
+                                <ul>
+                                    <li>
+                                        <div class="sidebar_f1">MAIN NAVIGATION</div>
+                                    </li>
+                                    <li>
+                                        <div class="dashboard sidebar_f2" id="btn-1" data-toggle="collapse" data-target="#dash_menu" aria-expanded="false">
+                                            <p><a><i class="fas fa-tachometer-alt"></i>Dashboard
+                                                <span class="span_right">&lt;</span></a></p>
+                                        </div>
+                                        <div class="dash_menu">
+                                            <ul class="nav collapse" id="dash_menu" role="menu" aria-labelledby="btn-1">
+                                                <li>
+                                                    <div class="dash_menu_1 sidebar_f3">
+                                                        <p><a><i class="far fa-circle"></i>Dashboard v1</a></p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="dash_menu_2 sidebar_f3">
+                                                        <p><a><i class="far fa-circle"></i>Dashboard v2</a></p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="layout sidebar_f2">
+                                            <p><a><i class="far fa-file"></i>Layout Options<span class="span_right">
+                                                <span class="badge badge-primary">4</span></span></a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widgets sidebar_f2">
+                                            <p><a><i class="fas fa-th"></i>Widgets<span class="span_right">
+                                                <span class="badge badge-success">new</span></span></a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="charts sidebar_f2">
+                                            <p><a><i class="fas fa-chart-pie"></i>Charts
+                                                <span class="span_right">&lt;</span></a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="calendar sidebar_f2">
+                                            <p><a><i class="far fa-calendar-alt"></i>Calendar
+                                                <span class="span_right">
+                                                    <span class="badge badge-primary">17</span>
+                                                    <span class="badge badge-warning">3</span>
+                                                </span>
+                                            </a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sidebar_f1">LABELS</div>
+                                    </li>
+                                    <li>
+                                        <div class="important sidebar_f2">
+                                            <p><a><i class="far fa-circle"></i>Important</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="warning sidebar_f2">
+                                                <p><a><i class="far fa-circle"></i>Warning</a></p>
+                                            </div>
+                                    </li>
+                                    <li>
+                                        <div class="premium sidebar_f2">
+                                            <p><a><i class="far fa-star"></i>Premium Templates</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                
+                                
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+        <!-- <script>
+                function close_menu(){
+                    document.getElementById("sidebar").style.display="none";
+                }
+            </script> -->
+    </body>
+
+</html>
