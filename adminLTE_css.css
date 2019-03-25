@@ -1,3 +1,32 @@
+.dropdown-toggle::after{
+    display: none;
+}
+.pointer{
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    background-color: #3c8dbc;
+    font-size: 13px;
+    margin: 0;
+}
+.grid li{
+    color: white;
+}
+.dropdown-menu{
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+.dropdown-item{
+
+}
+.dropdown-item a i{
+    margin-right:10px;
+}
+.cursor{
+    cursor: context-menu;
+}
 .header .row{
     background-color: #3c8dbc;
     color: white;
@@ -14,7 +43,7 @@
     background-color: #367fa9;
 }
 .header .container-fluid .row .col-md-10{
-    padding: 0px;
+    padding: 0;
 } 
 .menu_bar_left{
     float: right;
@@ -27,19 +56,19 @@
     color: #fff;
     font-size: 8px;
     background-color: #28a745;
-    margin: 0px -5px;
+    margin: 0 -5px;
 }
 .badge-warning {
     color: #fff;
     font-size: 8px;
     background-color:red;
-    margin: 0px -5px;
+    margin: 0 -5px;
 }
 .badge-danger {
     color: #fff;
     font-size: 8px;
     background-color:orange;
-    margin: 0px -5px;
+    margin: 0 -5px;
 }
 .auth_img img {
     vertical-align: middle;
@@ -60,8 +89,8 @@
     transition: 0.3s ease all;
 }
 .menu_bar_left ul{
-    margin-bottom: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 .menu_bar_left ul li{
     list-style: none; 
@@ -86,8 +115,8 @@
     transition: 0.3s ease all;
 }
 .padleft{
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .profile{
     background-color: #222d32;
@@ -126,6 +155,7 @@
 .search_row .form-control{
     background-color: #374850;
     border: none;
+    color: white;
 }
 .fa-search{
     font-size: 13px;
@@ -148,10 +178,10 @@
 }
 .sidebar ul li{
     list-style: none;
-    padding:0px;
+    padding:0;
 }
 .sidebar ul{
-    padding: 0px;
+    padding: 0;
 }
 .dashboard{
     border-left: 3px solid lightskyblue;
@@ -171,7 +201,7 @@
     margin-right: 8px;
 }
 .sidebar p{
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .premium{
     background-color: rgb(0, 166, 90);
@@ -210,16 +240,30 @@
     color: white;
     padding-right: 13px;
 }
-
 .sidebar_f3:hover{
     color: white;
 }
+
 .dash_menu{
     background-color: #2c3b41;
     font-size: 13px;
 }
+.dashboard.sidebar_f2 a span.span_right i,.charts.sidebar_f2 a span.span_right i {
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+.dashboard.sidebar_f2.collapsed a span.span_right i, .charts.sidebar_f2.collapsed a span.span_right i{
+    transform: rotate(0deg);
+}
 
-
+.box {
+  display: block;  
+  background: lightblue;
+  margin-bottom: 1em;
+}
+input.form-control{
+	color:white;
+}
 @media only screen and (max-width:772px){
 
 }

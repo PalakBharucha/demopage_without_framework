@@ -21,33 +21,46 @@
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-9 ">
                         <div class="admin_content">
-                                <div class="menu_bar_right" id="menu_button">                                      
-                                    <a><i class="fas fa-bars"></i></a>                                          
+                                <div class="menu_bar_right cursor" id="menu_button" onclick="toggle_sidebar()">                                      
+                                    <a class="menu_button"><i class="fas fa-bars"></i></a>                                          
                                 </div>
                                 <div class="menu_bar_left">
                                     <ul>                                    
-                                   <li> <a class="icon">
+                                   <li> <a class="icon cursor">
                                             <i class="far fa-envelope"></i>
                                             <sup><span class="badge badge-success">4</span></sup>
                                     </a></li>                                    
-                                    <li><a class="icon">
+                                    <li><a class="icon cursor">
                                             <i class="far fa-bell"></i>
                                             <sup><span class="badge badge-danger">10</span></sup>
                                     </a></li>
-                                    <li><a class="icon">
+                                    <li><a class="icon cursor">
                                             <i class="far fa-flag"></i>
                                             <sup><span class="badge badge-warning">9</span></sup>
                                     </a></li>
-                                    <li><a class="icon">
+                                    <li class="dropdown"><div class=" dropdown-toggle" 
+                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" 
+                                     aria-expanded="false"><a class="icon cursor">
                                         <span class="auth_img">
                                             <img src="auth1.jpg">
                                         </span>
-                                        <span class="auth_name">
+                                        <span class="auth_name pointer">
                                             Alexender the Great !
                                         </span>
-                                    </a></li>
-                                   <li> <a class="icon">
-                                            <i class="fas fa-cogs"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul class="grid">
+                                            <li class="dropdown-item cursor">
+                                                <a><i class="fas fa-user-edit"></i>Edit Profile</a>
+                                            </li>
+                                            <li class="dropdown-item cursor">
+                                                <a><i class="fas fa-sign-out-alt"></i>Log out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div></li>
+                                   <li> <a class="icon cursor">
+                                        <i class="fas fa-cogs"></i>
                                     </a> </li>
                                     </ul>                                
                                 </div>
@@ -73,7 +86,7 @@
                                 </div>
                                 <div class="search_row">
                                         <input class="form-control" type="text" placeholder="Search...">
-                                        <span><a><i class="fas fa-search"></i></a></span>
+                                        <span><a><i class="fas fa-search cursor"></i></a></span>
                                 </div>
                                 <!--list starts-->
                                 <ul>
@@ -81,20 +94,20 @@
                                         <div class="sidebar_f1">MAIN NAVIGATION</div>
                                     </li>
                                     <li>
-                                        <div class="dashboard sidebar_f2" id="btn-1" data-toggle="collapse" data-target="#dash_menu" aria-expanded="false">
-                                            <p><a><i class="fas fa-tachometer-alt"></i>Dashboard
-                                                <span class="span_right">&lt;</span></a></p>
+                                        <div class="dashboard sidebar_f2 collapsed" id="btn-1" data-toggle="collapse" data-target="#dash_menu" aria-expanded="false">
+                                            </p><a><i class="fas fa-tachometer-alt"></i>Dashboard
+                                                <span class="span_right"><i class="fa fa-angle-left cursor" aria-hidden="true"></i></span></a>
                                         </div>
                                         <div class="dash_menu">
                                             <ul class="nav collapse" id="dash_menu" role="menu" aria-labelledby="btn-1">
                                                 <li>
                                                     <div class="dash_menu_1 sidebar_f3">
-                                                        <p><a><i class="far fa-circle"></i>Dashboard v1</a></p>
+                                                        <a><i class="far fa-circle"></i>Dashboard v1</a>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="dash_menu_2 sidebar_f3">
-                                                        <p><a><i class="far fa-circle"></i>Dashboard v2</a></p>
+                                                        <a><i class="far fa-circle"></i>Dashboard v2</a>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -113,10 +126,24 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="charts sidebar_f2">
+                                        <div class="charts sidebar_f2 collapsed" id="btn-2" data-toggle="collapse" data-target="#chart_menu" aria-expanded="false" onclick="rotate_arrow">
                                             <p><a><i class="fas fa-chart-pie"></i>Charts
-                                                <span class="span_right">&lt;</span></a></p>
+                                                <span class="span_right"><i class="fa fa-angle-left cursor" id="arrow" aria-hidden="true"></i></span></a></p>
                                         </div>
+                                        <div class="chart_menu sidebar">
+                                            <ul class="nav collapse" id="chart_menu" role="menu" aria-labelledby="btn-2">
+                                                <li>
+                                                    <div class="chart_menu_1 sidebar_f3">
+                                                        <p><a><i class="far fa-circle"></i>Signs v1</a></p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="chart_menu_2 sidebar_f3">
+                                                        <p><a><i class="far fa-circle"></i>Symbols v2</a></p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>                                        
                                     </li>
                                     <li>
                                         <div class="calendar sidebar_f2">
@@ -146,24 +173,26 @@
                                             <p><a><i class="far fa-star"></i>Premium Templates</a></p>
                                         </div>
                                     </li>
-                                </ul>
-
-                                
-                                
+                                </ul>                               
                             </div>
                     </div>
-                    
+                    <div class="col-lg-10 col-md-9 col-sm-9">                
+                        <div class="body_content">
+                            <p>This is content of body</p>
+                         </div>
+                        </div>             
+                     </div>                     
                 </div>
-            </div>
-        </div>
-        
-
-        </div>
-        <!-- <script>
-                function close_menu(){
-                    document.getElementById("sidebar").style.display="none";
+            </div> 
+            <script>
+                function toggle_sidebar(){
+                    var x=document.getElementById("sidebar");
+                    if(x.style.display==="none"){
+                        x.style.display="block";
+                    }else{
+                        x.style.display="none";
+                    }
                 }
-            </script> -->
-    </body>
-
+            </script>
+        </body>
 </html>
