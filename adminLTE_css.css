@@ -182,6 +182,7 @@
 }
 .sidebar ul{
     padding: 0;
+    display: grid;
 }
 .dashboard{
     border-left: 3px solid lightskyblue;
